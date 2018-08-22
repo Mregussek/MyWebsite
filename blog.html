@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+  <html lang="pl">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="description" content="Witryna Mateusz Rzeczyca" />
+      <meta name="keywords" content="programowanie,c++,cpp,html,css,python,c#,xaml" />
+      <meta name="author" content="Mateusz Rzeczyca">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/navigationBar.css" rel="stylesheet">
+      <link href="css/blogSettings.css" rel="stylesheet">
+      <link href="css/foot.css" rel="stylesheet">
+    </head>
+    <body>
+      <!-- zawartosc rozsuwanego menu -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">O mnie</a>
+          <a href="projects.html">Projekty</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+      <!-- klasa do menu nawigacyjnego -->
+      <div class="header" id="myHeader">
+        <a class="logo" href="index.html">
+          <span class="logoName">
+            Mateusz
+          </span>
+          <span class="logoSecondName">
+            Rzeczyca
+          </span>
+        </a>
+        <div class="header-right">
+          <span class="menuIcon" onclick="openNav()">
+            &#9776;
+          </span>
+        </div>
+      </div>
+      <!-- bezposredni opis strony -->
+      <div class="content">
+        <div class="containerHeader">
+          <img src="img/background/notebookBack2.jpg">
+          <div class="centeredHeader">
+            Mateusz Rzeczyca Blog
+          </div>
+        </div>
+        <div class="rowBlog">
+          <div class="leftcolumn">
+            <div class="mainCard">
+              <h2>O czym piszę?</h2>
+              <p>
+                Interesujesz się informatyką? Programowaniem? Szukasz nowinek?
+                Świetnie trafiłeś! Pasjonuje się technologiami C++ oraz Python
+                na których temat nieustannie pogłębiam wiedzę. Zdobytymi
+                umiejętnościami zamierzam dzielić się z Wami na moim blogu.
+                Będę pisał o moich przemyśleniach, nowinkach technologicznych,
+                zamieszczał recenzje książek, urządzeń czy opisywał projekty
+                nad którymi będę pracował.
+              </p>
+              <p>
+                Nazywam się Mateusz Rzeczyca, jestem pasjonatem programowania.
+              </p>
+              <p>
+                Zapraszam Cię do mojego bloga!
+              </p>
+            </div>
+            <div class="card">
+              <h2>Przykladowy Post</h2>
+              <h5>Sierpien 20, 2018</h5>
+              <p>Tekst...</p>
+            </div>
+            <div class="card">
+              <h2>Przykladowy Post</h2>
+              <h5>Sierpien 20, 2018</h5>
+              <p>Tekst...</p>
+            </div>
+          </div>
+          <div class="rightcolumn">
+            <div class="card">
+              <h2>Popularne Posty</h2>
+              <div class="containerBlog">
+                <img src="img/blog/techBack.jpeg" class="image"/>
+                <div class="middle">
+                  <div class="text">
+                    Pierwszy post
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="containerBlog">
+                <img src="img/blog/techBack.jpeg" class="image"/>
+                <div class="middle">
+                  <div class="text">
+                    Drugi post
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="containerBlog">
+                <img src="img/blog/techBack.jpeg" class="image"/>
+                <div class="middle">
+                  <div class="text">
+                    Trzeci post
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h2>Zapisz się na newsletter!</h2>
+              <p>
+                Nad tym jeszcze pracuje,
+                funkcja będzie niedługo dostępna.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Tutaj zaczyna sie opis Social Media i Kontakt
+        oraz koncowka strony -->
+        <div class="row">
+          <div class="column50">
+            <div class="containerText">
+              <p>
+                <b>Social Media</b>
+              </p>
+              <button class="btn">
+                <a href="https://www.facebook.com/mateuszDeveloper/" target="blank">
+                  <img src="img/socialmedia/fb.png" class="socialButton" />
+                </a>
+              </button>
+              <button class="btn">
+                <a href="https://twitter.com/mattyITstudent" target="blank">
+                  <img src="img/socialmedia/twitter.png" class="socialButton" />
+                </a>
+              </button>
+              <button class="btn">
+                <a href="#" target="blank">
+                  <img src="img/socialmedia/linkedin.png" class="socialButton" />
+                </a>
+              </button>
+              <button class="btn">
+                <a href="https://github.com/Mregussek" target="blank">
+                  <img src="img/socialmedia/github.png" class="socialButton" />
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="column50">
+            <div class="containerText">
+              <p>
+                <b>Kontakt</b>
+              </p>
+              <p>
+                mateusz_rz@poczta.fm
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="footer">
+        <p>
+          Witryna prywatna. Każda opinia wyrażona w tej wirtynie jest
+          wyłącznie moją opinią (nie jest to opinia mojego pracodawcy).
+        </p>
+        <p>
+          <a href="privacy.html">
+            Polityka prywatnosci
+          </a>
+        </p>
+      </div>
+    </div>
+      <!-- Skrypt do rozsuwanego menu -->
+      <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+      </script>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("myHeader");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+    </body>
+  </html>

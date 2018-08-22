@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+  <html lang="pl">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="description" content="Witryna Mateusz Rzeczyca" />
+      <meta name="keywords" content="programowanie,c++,cpp,html,css,python,c#,xaml" />
+      <meta name="author" content="Mateusz Rzeczyca">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/navigationBar.css" rel="stylesheet">
+      <link href="css/justSite.css" rel="stylesheet">
+      <link href="css/foot.css" rel="stylesheet">
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <!-- zawartosc rozsuwanego menu -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html">O mnie</a>
+          <a href="projects.html">Projekty</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+      <!-- klasa do menu nawigacyjnego -->
+      <div class="header" id="myHeader">
+        <a class="logo" href="index.html">
+          <span class="logoName">
+            Mateusz
+          </span>
+          <span class="logoSecondName">
+            Rzeczyca
+          </span>
+        </a>
+        <div class="header-right">
+          <span class="menuIcon" onclick="openNav()">
+            &#9776;
+          </span>
+        </div>
+      </div>
+      <!-- bezposredni opis strony -->
+      <div class="content">
+        <div class="container">
+          <img src="img/background/notebookBack.jpg" style="width: 100%;" />
+          <div class="textBlock">
+            <h5>Mateusz Rzeczyca</h5>
+            <h4>Software Developer</h4>
+            <h5>C++, Python, Linux</h5>
+          </div>
+        </div>
+        <div class="choose">
+          <div class="row">
+            <div id="b1" class="column" onclick="openTab('b1Content');">
+              O mnie
+            </div>
+            <div id="b2" class="column" onclick="openTab('b2Content');">
+              Edukacja
+            </div>
+            <div id="b3" class="column" onclick="openTab('b3Content');">
+              Technologie
+            </div>
+          </div>
+          <div class="containerTab" style="background: #f1f1f1;">
+            <h2>...</h2>
+            <p>...</p>
+          </div>
+          <div id="b1Content" class="containerTab" style="display:none; background: #f1f1f1;">
+            <p>
+              Jestem pasjonatem programowania, który zgłębia tajniki takich
+              języków jak C++ i Python. Sprawnie administruje systemem Linux,
+              jest to mój domyślny system operacyjny. Pierwszy raz informatyka
+              zainteresowałem się w 6 klasie szkoły podstawowej, kiedy to
+              poznałem HTML.
+            </p>
+          </div>
+          <div id="b2Content" class="containerTab" style="display:none; background: #f1f1f1;">
+            <p>
+              <b>Elektronika i Telekomunikacja (inżynier)</b>
+            </p>
+            <p>2018 - obecnie</p>
+            <p>Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie</p>
+            <img src="img/logo/agh.png" class="aghLogo" />
+          </div>
+          <div id="b3Content" class="containerTab" style="display:none; background: #f1f1f1;">
+            <p>C++</p>
+            <p>Python</p>
+            <p>HTML + CSS</p>
+            <p>C# + XAML</p>
+            <hr style="color: dimgray;"/>
+            <p>
+              Moimi domyślnymi językami programowania są C++ oraz Python. Przy
+              ich użyciu tworzę najwięcej projektów. Podczas mojej przygody z
+              programowaniem miałem również styczność z C# + XAML, dzięki czemu
+              tworzyłem aplikację WPF. Zaczerpnąłem również sporo wiedzy o HTML
+              + CSS z myślą o tej stronie.
+          </div>
+        </div>
+        <!-- Tutaj zaczyna sie opis Social Media i Kontakt
+        oraz koncowka strony -->
+        <div class="row">
+          <div class="column50">
+            <div class="containerText">
+              <p>
+                <b>Social Media</b>
+              </p>
+              <button class="btn">
+                <a href="https://www.facebook.com/mateuszDeveloper/" target="blank">
+                  <img src="img/socialmedia/fb.png" class="socialButton" />
+                </a>
+              </button>
+              <button class="btn">
+                <a href="https://twitter.com/mattyITstudent" target="blank">
+                  <img src="img/socialmedia/twitter.png" class="socialButton" />
+                </a>
+              </button>
+              <button class="btn">
+                <a href="#" target="blank">
+                  <img src="img/socialmedia/linkedin.png" class="socialButton" />
+                </a>
+              </button>
+              <button class="btn">
+                <a href="https://github.com/Mregussek" target="blank">
+                  <img src="img/socialmedia/github.png" class="socialButton" />
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="column50">
+            <div class="containerText">
+              <p>
+                <b>Kontakt</b>
+              </p>
+              <p>
+                mateusz_rz@poczta.fm
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>
+            Witryna prywatna. Każda opinia wyrażona w tej wirtynie jest
+            wyłącznie moją opinią (nie jest to opinia mojego pracodawcy).
+          </p>
+          <p>
+            <a href="privacy.html">
+              Polityka prywatnosci
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- Skrypt do rozsuwanego menu -->
+      <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+      </script>
+      <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("myHeader");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+      </script>
+      <script>
+        function openTab(tabName) {
+          var i, x;
+          x = document.getElementsByClassName("containerTab");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          document.getElementById(tabName).style.display = "block";
+        }
+      </script>
+    </body>
+  </html>

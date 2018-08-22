@@ -1,0 +1,177 @@
+body {
+  font-family: monospace;
+
+  height: 1350px;
+}
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+
+.container img {
+  border-radius: 2%;
+}
+
+/* Bottom right text */
+.textBlock {
+  position: absolute;
+
+  bottom: 40px;
+  right: 40px;
+
+  background-color: black;
+  color: white;
+
+  border-radius: 5%;
+
+  font-size: 3vw;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  opacity: 0.6;
+
+  text-align: center;
+}
+
+.choose {
+  margin-top: 10px;
+}
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    padding: 20px;
+
+    text-align: center;
+    font-size: 25px;
+
+    cursor: pointer;
+    color: white;
+
+    border-radius: 5%;
+}
+
+.containerTab {
+    padding: 20px;
+
+    color: dimgray;
+
+    border-radius: 2%;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.containerTab p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+#b1 {
+  background: #f1f1f1;
+
+  color: dimgray;
+}
+
+#b2 {
+  background: #f1f1f1;
+
+  color: dimgray;
+}
+
+#b3 {
+  background: #f1f1f1;
+
+  color: dimgray;
+}
+
+
+@media screen and (max-width: 400px) {
+  body {
+    font-family: monospace;
+
+    height: 650px;
+  }
+
+  .menuIcon {
+    font-size: 30px;
+
+    cursor: pointer;
+  }
+
+  .textBlock {
+    position: absolute;
+
+    bottom: 20px;
+    right: 10px;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 5%;
+
+    font-size: 3vw;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    opacity: 0.6;
+
+    text-align: center;
+  }
+
+  .column {
+      float: left;
+      width: 27%;
+      padding: 10px;
+
+      text-align: center;
+      font-size: 13px;
+
+      cursor: pointer;
+      color: white;
+
+      border-radius: 5%;
+  }
+
+  .containerTab {
+      padding: 20px;
+
+      color: dimgray;
+
+      border-radius: 2%;
+
+      text-align: center;
+
+      font-size: 10px;
+  }
+
+  .containerTab p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .aghLogo {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .column {
+      float: left;
+      width: 31%;
+      padding: 20px;
+
+      text-align: center;
+      font-size: 25px;
+
+      cursor: pointer;
+      color: white;
+
+      border-radius: 5%;
+  }
+}

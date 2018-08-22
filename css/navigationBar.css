@@ -1,0 +1,157 @@
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+
+  background-color: #f1f1f1;
+
+  padding: 20px 10px 20px 10px;
+
+  z-index: 1;
+
+  border-radius: 2%;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+
+  color: black;
+
+  text-align: center;
+
+  padding: 12px;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  line-height: 25px;
+
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header img.logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.header span.logoName {
+  color: #000000;
+}
+
+.header span.logoSecondName {
+  color: #000a8a;
+}
+
+.menuIcon {
+  font-size: 30px;
+
+  cursor: pointer;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 97.2%;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+
+  font-size: 50px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 400px) {
+  .header a.logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 90%;
+  }
+
+  .content {
+    padding: 8px;
+
+    font-size: 50px;
+  }
+}
+
+/* --------------------------
+ HERE BEGINS THE MENU CODE
+ ---------------------------- */
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

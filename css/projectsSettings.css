@@ -1,0 +1,73 @@
+body {
+  font-family: monospace;
+}
+
+.columnContent {
+    float: left;
+    width: 33%;
+
+    text-align: center;
+}
+
+.columnContent h6 {
+  font-size: 25px;
+}
+
+.columnContent p {
+    font-size: 20px;
+}
+
+/* Clear floats after the columns */
+.rowContent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.containerTab {
+    padding: 20px;
+
+    color: dimgray;
+
+    border-radius: 2%;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+.containerTab p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .columnContent {
+        width: 100%;
+    }
+
+    .columnContent h6 {
+      font-size: 20px;
+    }
+
+    .columnContent p {
+        font-size: 15px;
+    }
+
+    .containerTab {
+        padding: 20px;
+
+        color: dimgray;
+
+        border-radius: 2%;
+
+        text-align: center;
+
+        font-size: 15px;
+    }
+
+    .containerTab p {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+}
