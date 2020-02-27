@@ -1,6 +1,8 @@
 # Mateusz Rzeczyca's Site
 
 In order to learn some frontend programming (HTML + CSS + JS) I wrote this website to promote myself. Some things need to be rewrote.
+[Link](https://mregussek.github.io/RzeczycaSite/index.html) <- here you can find result of this code.
+
 
 ## Author
 
